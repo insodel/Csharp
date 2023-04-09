@@ -7,9 +7,15 @@ namespace Caesar_Cypher
                      // Se pide, realizar un programa que encripte un texto mediante el cifrado César.El usuario introducirá el texto, y el número de desplazamiento. (entrada string + entrada int)
                      // Ejemplo:  texto: hola   numero: 2   resultado: jqnc   (h + 2 = j, a + 2 = c, etc..)
                      // Ejemplo2: texto: abcd numero: 1 resultado: bcde
-                     // Extra: programar la función encode(string, int) que realiza el proceso inverso
+                     // Extra: programar la función decode(string, int) que realiza el proceso inverso
     class Program
     {
+        /// <summary>
+        /// Método que codifica un mensaje usando el cifrado César. (Ejemplo: "abc" con 2 desplazamientos se transforma en "cde".
+        /// </summary>
+        /// <param name="frase"></param>
+        /// <param name="numDesp"></param>
+        /// <returns></returns>
         static string Encode(ref string frase, int numDesp) 
         {
             char[] arrayFrase = new char[frase.Length];
@@ -30,7 +36,12 @@ namespace Caesar_Cypher
             frase = new string(arrayFrase);
             return frase;
         }
-
+        /// <summary>
+        /// Método que devuelve el estado original de una cadena si se conoce el número de desplazamientos aplicados durante el cifrado.
+        /// </summary>
+        /// <param name="frase"></param>
+        /// <param name="numDesp"></param>
+        /// <returns></returns>
         static string Decode(ref string frase, int numDesp)
         {
             char[] arrayFrase = new char[frase.Length];
