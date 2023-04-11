@@ -11,7 +11,7 @@ namespace Caesar_Cypher
     class Program
     {
         /// <summary>
-        /// Método que codifica un mensaje usando el cifrado César. (Ejemplo: "abc" con 2 desplazamientos se transforma en "cde".
+        /// Método que codifica un mensaje usando el cifrado César. (Ejemplo: "abc" con 2 desplazamientos se transforma en "cde")
         /// </summary>
         /// <param name="frase"></param>
         /// <param name="numDesp"></param>
